@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@phosphor-icons/web/regular";
+@import "@phosphor-icons/web/fill";
+
+/* Follow me bounce arrow */
+.bounce-arrow {
+  animation: bounce-down 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}

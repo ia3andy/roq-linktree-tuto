@@ -1,0 +1,19 @@
+title: Groot's Links
+description: I am Groot's link tree
+links:
+  - name: Guardians HQ
+    url: https://marvel.com/guardians
+    description: Where we save the galaxy
+    icon: shield-star
+  - name: Quarkus
+    url: https://quarkus.io
+    description: Supersonic Subatomic Java framework
+    icon: lightning
+  - name: Roq
+    url: https://iamroq.dev
+    description: Static site generator with a Java soul
+    icon: terminal
+  - name: Tree Care Tips
+    url: https://en.wikipedia.org/wiki/Groot
+    description: I am Groot
+    icon: tree
