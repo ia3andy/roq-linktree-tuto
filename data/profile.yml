@@ -3,7 +3,6 @@ handle: "@iamgroot"
 title: I am Groot.
 image: groot.png
 bio: I am Groot. I am Groot. I am Groot!
-tree: my-links
 social:
   - name: GitHub
     url: https://github.com/iamgroot
@@ -14,3 +13,20 @@ social:
   - name: Bluesky
     url: https://bsky.app/profile/iamgroot.bsky.social
     icon: butterfly
+links:
+  - name: Guardians HQ
+    url: https://marvel.com/guardians
+    description: Where we save the galaxy
+    icon: shield-star
+  - name: Quarkus
+    url: https://quarkus.io
+    description: Supersonic Subatomic Java framework
+    icon: lightning
+  - name: Roq
+    url: https://iamroq.dev
+    description: Static site generator with a Java soul
+    icon: terminal
+  - name: Tree Care Tips
+    url: https://en.wikipedia.org/wiki/Groot
+    description: I am Groot
+    icon: tree

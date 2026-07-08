@@ -1,0 +1,15 @@
+title: Guardians of the Galaxy
+description: I am Groot's team resources
+links:
+  - name: Guardians HQ
+    url: https://marvel.com/guardians
+    description: Where we save the galaxy
+    icon: shield-star
+  - name: Milano Ship Manual
+    url: https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy
+    description: How to fly the Milano
+    icon: rocket
+  - name: Groot's Wikipedia
+    url: https://en.wikipedia.org/wiki/Groot
+    description: Everything about me
+    icon: tree
