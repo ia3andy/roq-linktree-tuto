@@ -12,17 +12,13 @@ layout: default
 
     {#include partials/profile /}
 
+    {#if cdi:profile.links??}
     <div class="lt-links">
-      {#if page.data.tree??}
-        {#for link in cdi:trees.map.get(page.data.tree).links}
-        {#linkCard link=link /}
-        {/for}
-      {#else if cdi:profile.links??}
-        {#for link in cdi:profile.links}
-        {#linkCard link=link /}
-        {/for}
-      {/if}
+      {#for link in cdi:profile.links}
+      {#linkCard link=link /}
+      {/for}
     </div>
+    {/if}
 
     {#insert /}
 
