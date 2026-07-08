@@ -1,5 +1,7 @@
 ---
 layout: default
+robots: noindex
+sitemap: false
 ---
 {@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
@@ -10,21 +12,36 @@ layout: default
   </a>
   <div class="lt-container">
 
-    {#include partials/profile /}
-
-    <div class="lt-links">
-      {#if page.data.tree??}
-        {#for link in cdi:trees.map.get(page.data.tree).links}
-        {#linkCard link=link /}
-        {/for}
-      {#else if cdi:profile.links??}
-        {#for link in cdi:profile.links}
-        {#linkCard link=link /}
-        {/for}
+    <div class="lt-heading">
+      <h1 class="lt-heading-title">{page.title}</h1>
+      {#if page.description}
+      <p class="lt-title">{page.description}</p>
       {/if}
     </div>
 
-    {#insert /}
+    <div class="lt-links">
+      {#for link in page.data.links}
+      {#linkCard link=link /}
+      {/for}
+    </div>
+
+    {#if page.data('show-profile', true)}
+    <div class="lt-separator">
+      <i class="ph ph-caret-double-down" style="font-size: 20px;"></i>
+    </div>
+
+    <div class="lt-profile-links">
+      {#include partials/profile /}
+    </div>
+
+    {#if page.data('profile-links', true) and cdi:profile.links??}
+    <div class="lt-links">
+      {#for link in cdi:profile.links}
+      {#linkCard link=link /}
+      {/for}
+    </div>
+    {/if}
+    {/if}
 
   </div>
 </div>
