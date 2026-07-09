@@ -1,5 +1,5 @@
 window.downloadQR = function(btn) {
-  var wrap = btn.closest('.text-center').querySelector('.qr-wrap');
+  var wrap = btn.closest('.lt-tree-card').querySelector('.qr-wrap');
   var img = wrap.querySelector('img');
   if (!img) return;
   var filename = (wrap.dataset.filename || 'qr-code.svg').toLowerCase();
